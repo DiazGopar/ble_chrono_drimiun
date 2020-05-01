@@ -1587,11 +1587,8 @@ void race_jump_evt_handler(uint8_t button, event_t evt)
         break;
 
       }
-      break;
-  
+      break;  
   }
-
-
 }
 
 
@@ -1864,23 +1861,12 @@ int main(void)
        
       
         if(spi_tx_done) {
-          //memset(&encoder_value,0,sizeof(encoder_value));
           revmemcpy(&encoder_value, &rx_ls7366_buffer_spi[1],4); //TODO: It's critical access????
           NRF_LOG_INFO("ENC value: %d", encoder_value);
           spi_tx_done = false;
         }
 
         if(hx711_spi_transfers_complete) {
-          //memset(&encoder_value,0,sizeof(encoder_value));
-          //encoder_value = int24toint32(rx_hx711_buffer_spi);
-          encoder_value = 0;
-
-          /*if((rx_hx711_buffer_spi[0] & 0x40) > 0) {
-            encoder_value = (0xFF << 24) + ((rx_hx711_buffer_spi[0] | 0x80) << 16) + (rx_hx711_buffer_spi[1] << 8) + (rx_hx711_buffer_spi[2]);
-          } else {
-            encoder_value = (rx_hx711_buffer_spi[0] << 16) + (rx_hx711_buffer_spi[1] << 8) + (rx_hx711_buffer_spi[2]);
-          }*/
-          
           encoder_value = (rx_hx711_buffer_spi[0] << 16) + (rx_hx711_buffer_spi[1] << 8) + (rx_hx711_buffer_spi[2]);
           encoder_value = encoder_value & 0x800000 ? 0xFF000000 | encoder_value : encoder_value;      
           //revmemcpy(&encoder_value, &rx_hx711_buffer_spi[0],3); //TODO: It's critical access????
