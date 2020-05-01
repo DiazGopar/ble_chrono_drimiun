@@ -1,0 +1,24 @@
+Output/ble_app_template_pca10056e_s112\ Release/Obj/app_error.o: \
+ /Users/gopar/Documents/NRF/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_error.c \
+ ../../../../../../modules/nrfx/mdk/nrf.h \
+ ../../../../../../modules/nrfx/mdk/nrf52811.h \
+ ../../../../../../components/toolchain/cmsis/include/core_cm4.h \
+ /Applications/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.18/include/stdint.h \
+ ../../../../../../components/toolchain/cmsis/include/core_cmInstr.h \
+ ../../../../../../components/toolchain/cmsis/include/cmsis_gcc.h \
+ ../../../../../../components/toolchain/cmsis/include/core_cmFunc.h \
+ ../../../../../../components/toolchain/cmsis/include/core_cmSimd.h \
+ ../../../../../../modules/nrfx/mdk/system_nrf52811.h \
+ ../../../../../../modules/nrfx/mdk/nrf52811_bitfields.h \
+ ../../../../../../modules/nrfx/mdk/nrf51_to_nrf52810.h \
+ ../../../../../../modules/nrfx/mdk/nrf52_to_nrf52810.h \
+ ../../../../../../modules/nrfx/mdk/nrf52810_to_nrf52811.h \
+ ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
+ /Applications/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.18/include/stdio.h \
+ /Applications/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.18/include/__crossworks.h \
+ /Users/gopar/Documents/NRF/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_error.h \
+ /Applications/SEGGER\ Embedded\ Studio\ for\ ARM\ 4.18/include/stdbool.h \
+ /Users/gopar/Documents/NRF/nRF5_SDK_15.3.0_59ac345/components/libraries/util/sdk_errors.h \
+ ../../../../../../components/softdevice/s112/headers/nrf_error.h \
+ /Users/gopar/Documents/NRF/nRF5_SDK_15.3.0_59ac345/components/libraries/util/nordic_common.h \
+ /Users/gopar/Documents/NRF/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_error_weak.h
